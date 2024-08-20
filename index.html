@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section id="results-container">
+        <h2 class="lavender-color">Your Result</h2>
+        <div class="lavender-color" id="result-complete">
+          <span id="result">--</span> of 100
+        </div>
+        <div id="message">
+          <h3 id="great">Great</h3>
+          <p id="percent-container" class="lavender-color">
+            You scored higher than <span id="percent">--%</span> of the people
+            who have taken these tests.
+          </p>
+        </div>
+      </section>
+      <section id="summary">
+        <h2>Summary</h2>
+        <article>
+          <div class="container reaction">
+            <div class="icon reactioni">
+              <img src="" alt="" />
+              <p></p>
+            </div>
+            <div class="container-100">
+              <span id="score1"></span>
+              <p>/ 100</p>
+            </div>
+          </div>
+          <div class="container memory">
+            <div class="icon memoryi">
+              <img src="" alt="" />
+              <p></p>
+            </div>
+            <div class="container-100">
+              <span id="score2"></span>
+              <p>/ 100</p>
+            </div>
+          </div>
+          <div class="container verbal">
+            <div class="icon verbali">
+              <img src="" alt="" />
+              <p></p>
+            </div>
+            <div class="container-100">
+              <span id="score3"></span>
+              <p>/ 100</p>
+            </div>
+          </div>
+          <div class="container visual">
+            <div class="icon visuali">
+              <img src="" alt="" />
+              <p></p>
+            </div>
+            <div class="container-100">
+              <span id="score4"></span>
+              <p>/ 100</p>
+            </div>
+          </div>
+        </article>
+        <button onclick="calculate()">Continue</button>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/willsf2021">Wilson Júnior</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
