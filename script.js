@@ -13,16 +13,33 @@ const fictionalData = [
 ];
 fetch("data.json")
   .then((response) => response.json())
-  .then((data) => {
-    data.forEach((item, index) => {
+  .then("render")
+  .catch((error) => console.error("Erro ao carregar o JSON:", error));
+
+
+
+const render = (data) => {
+  data.forEach( (item, index) => {
       document.querySelectorAll(".container .icon img")[index].src = item.icon;
       document.querySelectorAll(".icon p")[index].textContent = item.category;
       document.querySelectorAll(".container-100 span")[index].textContent =
         item.score;
       document.querySelector(`#score${index + 1}`).value = item.score;
     });
-  })
-  .catch((error) => console.error("Erro ao carregar o JSON:", error));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 function calculate() {
   let scores = [
     parseFloat(document.querySelector("#score1").value) || 0,
